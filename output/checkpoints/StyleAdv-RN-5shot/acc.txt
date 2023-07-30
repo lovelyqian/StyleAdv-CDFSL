@@ -1,0 +1,6 @@
+epoch -1 miniImagenet: cub: cars: places: plantae:
+  1000 test iterations: Acc = 84.17% +- 0.55%
+  1000 test iterations: Acc = 68.72% +- 0.67%
+  1000 test iterations: Acc = 50.13% +- 0.68%
+  1000 test iterations: Acc = 77.73% +- 0.62%
+  1000 test iterations: Acc = 61.52% +- 0.68%
