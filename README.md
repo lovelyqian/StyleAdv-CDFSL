@@ -42,7 +42,7 @@ Our method aims at improving the generalization ability of models, we apply the 
 
 Taking 5-way 1-shot as an example, the meta-train can be done as,
 ```
-python3 metatrain_StyleAdv_RN.py --dataset miniImagenet --name exp-name --method gnnnet --train_aug --warmup baseline --n_shot 1 --stop_epoch 200
+python3 metatrain_StyleAdv_RN.py --dataset miniImagenet --name exp-name --train_aug --warmup baseline --n_shot 1 --stop_epoch 200
 ```
 
 - We integrate the testing into the training, and the testing results can be found on `output/checkpoints/exp-name/acc*.txt`;
