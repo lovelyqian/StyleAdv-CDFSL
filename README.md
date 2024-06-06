@@ -1,4 +1,4 @@
-<img width="417" alt="image" src="https://github.com/lovelyqian/StyleAdv-CDFSL/assets/49612387/8df57ab8-e74e-49a6-a192-0d207ea00806"># 1 StyleAdv-CDFSL
+# 1 StyleAdv-CDFSL
 Repository for the CVPR-2023 paper : StyleAdv: Meta Style Adversarial Training for Cross-Domain Few-Shot Learning
 
 [[Paper](https://arxiv.org/pdf/2302.09309)], [[Presentation Video on Bilibili](https://www.bilibili.com/video/BV1th4y1s78H/?spm_id_from=333.999.0.0&vd_source=668a0bb77d7d7b855bde68ecea1232e7)], [[Presentation Video on Youtube](https://youtu.be/YB-S2YF22mc)]
