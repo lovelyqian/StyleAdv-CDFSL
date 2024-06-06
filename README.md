@@ -1,4 +1,4 @@
-# 1 StyleAdv-CDFSL
+<img width="417" alt="image" src="https://github.com/lovelyqian/StyleAdv-CDFSL/assets/49612387/8df57ab8-e74e-49a6-a192-0d207ea00806"># 1 StyleAdv-CDFSL
 Repository for the CVPR-2023 paper : StyleAdv: Meta Style Adversarial Training for Cross-Domain Few-Shot Learning
 
 [[Paper](https://arxiv.org/pdf/2302.09309)], [[Presentation Video on Bilibili](https://www.bilibili.com/video/BV1th4y1s78H/?spm_id_from=333.999.0.0&vd_source=668a0bb77d7d7b855bde68ecea1232e7)], [[Presentation Video on Youtube](https://youtu.be/YB-S2YF22mc)]
@@ -42,7 +42,7 @@ Our method aims at improving the generalization ability of models, we apply the 
 
 Taking 5-way 1-shot as an example, the meta-train can be done as,
 ```
-python3 metatrain_StyleAdv_RN.py --dataset miniImagenet --name exp-name --train_aug --warmup baseline --n_shot 1 --stop_epoch 200
+python3 metatrain_StyleAdv_RN.py --dataset miniImagenet --name exp-name --method gnnnet --train_aug --warmup baseline --n_shot 1 --stop_epoch 200
 ```
 
 - We integrate the testing into the training, and the testing results can be found on `output/checkpoints/exp-name/acc*.txt`;
