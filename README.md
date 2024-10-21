@@ -33,7 +33,7 @@ For the mini-Imagenet, cub, cars, places, and plantae, we refer to the [FWT](htt
 
 For the ChestX, ISIC, EuroSAT, and CropDisease, we refer to the [BS-CDFSL](https://github.com/IBM/cdfsl-benchmark) repo.
 
-If you can't find the Plantae dataset, we provide at [here](https://drive.google.com/file/d/1e3TklMlVBCG0XRfEw6DKStJGdmmXgvq5/view?usp=drive_link), please cite its paper. 
+If you can't find the Plantae dataset, we provide at [here](https://pan.baidu.com/s/1ZUVQfw-KEvJuTRiYco39-Q?pwd=0000), PIN: 0000, please cite its paper. 
 
 
 # 3 StyleAdv based on ResNet
