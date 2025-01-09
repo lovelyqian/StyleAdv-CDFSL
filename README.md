@@ -85,5 +85,35 @@ If you find our paper or this code useful for your research, please considering 
 }
 ```
 
+（if you are generally interested in CD-FSL task, we also have some other closely related works, attention and citation will be super appreciated!
+```
+@inproceedings{fu2025cross,
+  title={Cross-domain few-shot object detection via enhanced open-set object detector},
+  author={Fu, Yuqian and Wang, Yu and Pan, Yixuan and Huai, Lian and Qiu, Xingyu and Shangguan, Zeyu and Liu, Tong and Fu, Yanwei and Van Gool, Luc and Jiang, Xingqun},
+  booktitle={European Conference on Computer Vision},
+  pages={247--264},
+  year={2025},
+  organization={Springer}
+}
+
+@article{fu2022generalized,
+  title={Generalized meta-fdmixup: Cross-domain few-shot learning guided by labeled target data},
+  author={Fu, Yuqian and Fu, Yanwei and Chen, Jingjing and Jiang, Yu-Gang},
+  journal={IEEE Transactions on Image Processing},
+  volume={31},
+  pages={7078--7090},
+  year={2022},
+  publisher={IEEE}
+}
+
+@inproceedings{fu2022me,
+  title={Me-d2n: Multi-expert domain decompositional network for cross-domain few-shot learning},
+  author={Fu, Yuqian and Xie, Yu and Fu, Yanwei and Chen, Jingjing and Jiang, Yu-Gang},
+  booktitle={Proceedings of the 30th ACM international conference on multimedia},
+  pages={6609--6617},
+  year={2022}
+}
+```
+
 # 6 Acknowledge
 Our code is built upon the implementation of [FWT](https://github.com/hytseng0509/CrossDomainFewShot), [ATA](https://github.com/Haoqing-Wang/CDFSL-ATA), and [PMF](https://github.com/hushell/pmf_cvpr22). Thanks for their work.
