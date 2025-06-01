@@ -35,6 +35,7 @@ For the ChestX, ISIC, EuroSAT, and CropDisease, we refer to the [BS-CDFSL](https
 
 If you can't find the Plantae dataset, we provide at [here](https://pan.baidu.com/s/1ZUVQfw-KEvJuTRiYco39-Q?pwd=0000), PIN: 0000, please cite its paper. 
 
+if you can't find the splits (base/val/novel.json), we provide them [here](https://drive.google.com/drive/folders/17xqSY3HDXB-3lSPYlklbCTok3H3nS0Pp?usp=sharing)
 
 # 3 StyleAdv based on ResNet
 ## 3.1 meta-train StyleAdv
