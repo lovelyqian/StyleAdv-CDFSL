@@ -15,22 +15,22 @@ from methods.protonet import ProtoNet
 def load_ViTsmall(no_pretrain=False):
   model = vit.__dict__['vit_small'](patch_size=16, num_classes=0)
   if(not no_pretrain):
-    # 检查本地路径是否存在模型文件
+    # check if the local path exists
     local_path = "./checkpoints/pretrained_models/dino_deitsmall16_pretrain.pth"
     import os
     if os.path.exists(local_path):
-      # 如果本地文件存在，直接从本地加载
+      # if the local file exists, load the pretrained weight from local
       state_dict = torch.load(local_path, map_location="cpu")
-      print(f'从本地路径加载预训练权重: {local_path}')
+      print(f'load the pretrained weight from local path: {local_path}')
     else:
-      # 如果本地文件不存在，从网络下载
+      # if the local file does not exist, download the pretrained weight from network
       url = "dino_deitsmall16_pretrain/dino_deitsmall16_pretrain.pth"
       try:
         state_dict = torch.hub.load_state_dict_from_url(url="https://dl.fbaipublicfiles.com/dino/" + url)
-        print(f'从网络下载预训练权重')
+        print(f'download the pretrained weight from network')
       except Exception as e:
-        print(f'网络下载失败: {e}')
-        print(f'请手动下载模型文件到: {local_path}')
+        print(f'download the pretrained weight from network failed: {e}')
+        print(f'please download the model file to: {local_path}')
         raise e
     
     model.load_state_dict(state_dict, strict=True)
@@ -40,22 +40,22 @@ def load_ViTsmall(no_pretrain=False):
 def load_ViTbase(no_pretrain=False):
   model = vit.__dict__['vit_base'](patch_size=16, num_classes=0)
   if(not no_pretrain):
-    # 检查本地路径是否存在模型文件
+    # check if the local path exists
     local_path = "./checkpoints/pretrained_models/dino_vitbase16_pretrain.pth"
     import os
     if os.path.exists(local_path):
-      # 如果本地文件存在，直接从本地加载
+      # if the local file exists, load the pretrained weight from local
       state_dict = torch.load(local_path, map_location="cpu")
-      print(f'从本地路径加载预训练权重: {local_path}')
+      print(f'load the pretrained weight from local path: {local_path}')
     else:
-      # 如果本地文件不存在，从网络下载
+      # if the local file does not exist, download the pretrained weight from network
       url = "dino_vitbase16_pretrain/dino_vitbase16_pretrain.pth"
       try:
         state_dict = torch.hub.load_state_dict_from_url(url="https://dl.fbaipublicfiles.com/dino/" + url)
-        print(f'从网络下载预训练权重')
+        print(f'download the pretrained weight from network')
       except Exception as e:
-        print(f'网络下载失败: {e}')
-        print(f'请手动下载模型文件到: {local_path}')
+        print(f'download the pretrained weight from network failed: {e}')
+        print(f'please download the model file to: {local_path}')
         raise e
     
     model.load_state_dict(state_dict, strict=True)
@@ -76,21 +76,21 @@ def load_ResNet50_dino(no_pretrain=False):
   model = resnet50(pretrained=False)
   model.fc = torch.nn.Identity()
   if not no_pretrain:
-    # 检查本地路径是否存在模型文件
+    # check if the local path exists
     local_path = "./checkpoints/pretrained_models/dino_resnet50_pretrain.pth"
     import os
     if os.path.exists(local_path):
-      # 如果本地文件存在，直接从本地加载
+      # if the local file exists, load the pretrained weight from local
       state_dict = torch.load(local_path, map_location="cpu")
-      print(f'从本地路径加载预训练权重: {local_path}')
+      print(f'load the pretrained weight from local path: {local_path}')
     else:
-      # 如果本地文件不存在，从网络下载
+      # if the local file does not exist, download the pretrained weight from network
       try:
         state_dict = torch.hub.load_state_dict_from_url(url="https://dl.fbaipublicfiles.com/dino/dino_resnet50_pretrain/dino_resnet50_pretrain.pth", map_location="cpu")
-        print(f'从网络下载预训练权重')
+        print(f'download the pretrained weight from network')
       except Exception as e:
-        print(f'网络下载失败: {e}')
-        print(f'请手动下载模型文件到: {local_path}')
+        print(f'download the pretrained weight from network failed: {e}')
+        print(f'please download the model file to: {local_path}')
         raise e
     
     model.load_state_dict(state_dict, strict=False)
